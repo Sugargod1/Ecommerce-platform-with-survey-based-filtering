@@ -1,0 +1,211 @@
+/* Global Styles */
+body {
+    background-color: white;
+    font-family: Arial, sans-serif; /* Change to your preferred font stack */
+}
+html {
+	margin: 0;
+	padding: 0;
+}
+.forms {
+    margin-top: 500;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #23D5CC;
+	font-weight: 500;
+	font-family: "Quicksand", sans-serif;
+}
+/* CSS for Navbar */
+
+
+.navbartext {
+	position: absolute;
+	color: purple; /* Change text color as needed */
+	font-size: 24px; /* Adjust font size as needed */
+	margin-left: 10px; /* Adjust margin as needed */
+	font-family: "Quicksand", sans-serif;
+	top: 90px;
+}
+
+
+
+/* Container Styles */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+}
+
+/* Box Element Styles */
+.box-element {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    flex: 1; /* Make each box grow to fill the available space */
+}
+
+/* Slider Styles */
+.slider-wrapper {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.slider img {
+	margin-top: 30px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 100%;
+    max-height: 300px;
+}
+
+.slider-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.slider-nav a {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #63B76C;
+    margin: 0 30px;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slider-nav a.active {
+    background-color: #1B1B1B;
+}
+
+
+
+
+
+/* Product Details Styles */
+.product-details {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.product-details p {
+    margin: 10px 0;
+}
+
+/* Read More Button Styles */
+.read-more-btn {
+    background-color: #FFFFFF;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    color: #222222;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.read-more-btn:hover {
+    background-color: #222222;
+    color: #FFFFFF;
+}
+/* Text Styles */
+/* Text Styles */
+.text {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.moreText {
+    display: none; /* Initially hide the additional text */
+}
+
+.text.show-more .moreText {
+    display: block; /* Show the additional text when the show-more class is added */
+}
+
+
+
+/* URL Button Styles */
+.url-button {
+    background-color: #8A2BE2;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.url-button:hover {
+    background-color: #6B1D9E;
+}
+
+.url-button span {
+    position: relative;
+}
+
+.url-button i::before,
+.url-button i::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    border: 2px solid #FFFFFF;
+    background: #272822;
+    transition: 0.2s;
+}
+
+.url-button i::before {
+    left: 80%;
+    top: -2px;
+}
+
+.url-button i::after {
+    left: 20%;
+    bottom: -2px;
+}
+
+.url-button:hover i::before {
+    width: 15px;
+    left: 20%;
+}
+
+.url-button:hover i::after {
+    width: 15px;
+    left: 80%;
+}
+
+/* Put your CSS styles here */
+.footer {
+    background-color: #23242a;
+    color: #ffffff;
+    padding: 50px 0;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.social-icons a {
+    color: #ffffff; /* Setting color for social icons */
+    margin-right: 10px;
+}

@@ -1,0 +1,68 @@
+{% extends 'store/main.html' %}
+{% load static %}
+
+{% block content %}
+<div class="forms">
+<form  action="{% url 'survey' %}" method="post">
+    {% csrf_token %}
+    
+    <h2>Question 1: What's the usage place you're going to use?</h2>
+    <input type="radio" id="q1a" name="q1" value="Gaming">
+    <label for="q1a">Gaming</label><br>
+    <input type="radio" id="q1b" name="q1" value="Office">
+    <label for="q1b">Working</label><br>
+    <input type="radio" id="q1c" name="q1" value="Office">
+    <label for="q1c">Office</label><br>
+    <input type="radio" id="q1d" name="q1" value="Office">
+    <label for="q1d">Studying</label><br>
+    <input type="radio" id="q1e" name="q1" value="Gaming">
+    <label for="q1e">I don't know</label><br>
+    
+    <h2>Question 2: How much are you going to spend?</h2>
+    <input type="radio" id="q2a" name="q2" value="2500">
+    <label for="q2a">Expensive</label><br>
+    <input type="radio" id="q2b" name="q2" value="1000">
+    <label for="q2b">Budget</label><br>
+    <input type="radio" id="q2c" name="q2" value="1000">
+    <label for="q2c">Cheap</label><br>
+    <input type="radio" id="q2d" name="q2" value="2500">
+    <label for="q2d">Limited Edition</label><br>
+    <input type="radio" id="q2e" name="q2" value="2000">
+    <label for="q2e">I don't know</label><br>
+    
+    <h2>Question 3: Operating System?</h2>
+    <input type="radio" id="q3a" name="q3" value="Mac">
+    <label for="q3a">MACos</label><br>
+    <input type="radio" id="q3b" name="q3" value="Windows">
+    <label for="q3b">WINDOWS os</label><br>
+    <input type="radio" id="q3c" name="q3" value="Windows">
+    <label for="q3c">Linux/Unix</label><br>
+    <input type="radio" id="q3d" name="q3" value="Windows">
+    <label for="q3d">I don't know</label><br>
+    
+    <h2>Question 4: What's your favorite application choose from this?</h2>
+    <input type="radio" id="q4a" name="q4" value="VSCODE">
+    <label for="q4a">VSCODE</label><br>
+    <input type="radio" id="q4b" name="q4" value="Adobe_Premiere">
+    <label for="q4b">Adobe Premiere</label><br>
+    <input type="radio" id="q4c" name="q4" value="Final_Cut_X">
+    <label for="q4c">Final Cut X</label><br>
+    <input type="radio" id="q4d" name="q4" value="gmail_outlook_microsoft_products">
+    <label for="q4d">Gmail/Outlook/Microsoft Products</label><br>
+    <input type="radio" id="q4e" name="q4" value="unknown">
+    <label for="q4e">I don't know</label><br>
+    
+    <h2>Question 5: How mobile and how big you want your laptop to be?</h2>
+    <input type="radio" id="q5a" name="q5" value="17">
+    <label for="q5a">18 inch, I want something big</label><br>
+    <input type="radio" id="q5b" name="q5" value="16">
+    <label for="q5b">16 inch is cool, dawg</label><br>
+    <input type="radio" id="q5c" name="q5" value="15">
+    <label for="q5c">14 inch</label><br>
+    <input type="radio" id="q5d" name="q5" value="15">
+    <label for="q5d">I don't know</label><br>
+    
+    <input type="submit" value="Submit">
+</form>
+</div>
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% static "images" as baseUrl %}
+
+{% block content %}
+    <h2>Products</h2>
+    <div class="container">
+        <div class="row">
+            {% for store in store_list %}
+            <div class="col-lg-4">
+                    <div class="slider-wrapper">
+                      <div class="slider" id="slider-{{ forloop.counter }}">
+                        <img id="slide-{{ forloop.counter }}-1" src="{% static 'images/' %}{{ store.images1.url }}" alt="Product Image 1" />
+                        <img id="slide-{{ forloop.counter }}-2" src="{% static 'images/' %}{{ store.images2.url }}" alt="Product Image 1" />
+                        <img id="slide-{{ forloop.counter }}-3" src="{% static 'images/' %}{{ store.images3.url }}" alt="Product Image 1" />
+                      </div>
+                      <div class="slider-nav">
+                        <a href="#slide-{{ forloop.counter }}-1"></a>
+                        <a href="#slide-{{ forloop.counter }}-2"></a>
+                        <a href="#slide-{{ forloop.counter }}-3"></a>
+                      </div>
+                    </div>
+                    <div class="product-details">
+                      <p class="model">{{ store.model }}</p>
+                      <p class="year">Year: {{ store.year }}</p>
+                      <p class="price">{{ store.price }}$</p>
+                      <p class="text"><span class="moreText"> {{ store.description }}</span></p>
+<button class="read-more-btn" role="button">Read More</button>
+
+                      <a href="{{ store.urls }}" style="--clr:#8A2BE2" class="url-button"><span>BUY</span><i></i></a>
+                      
+                    </div>
+                </div>
+                {% if forloop.counter|divisibleby:3 and not forloop.last %}
+                    </div><div class="row">
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    
+    
+{% endblock %}
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>Ecom</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+	<style> 
+	.navbar {
+	background-image: url("{% static 'images/s.png' %}"); /* Change the background image URL as needed */
+	padding: 10px; /* Adjust padding as needed */
+	display: flex;
+	height: 70px;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 50px;
+	}
+	</style>
+</head>
+<body>
+
+	<nav class="navbar">
+        <p class="navbartext">Choosing Best Laptop for You</p>
+    </nav>
+
+     <div class="container">
+            <br>
+            {% block content %}
+
+
+            {% endblock content %}
+         </div>
+		 <footer class="footer">
+			<div class="container1">
+				<div class="about">
+					<h5>About Me</h5>
+					<p>
+						Highly motivated Berea College student with 
+						a passion for artificial intelligence and machine 
+						learning. My foundation lies in a strong background in competitive mathematics, honed through Mathematical Olympiads, and complemented by problem-solving skills sharpened in statistics and data science. I am resilient and perseverant, constantly seeking to learn and grow. I'm eager to leverage this combined expertise to contribute to the development and implementation of innovative solutions in the field of AI/ML.
+					</p>
+					<ul class="contact-info">
+						<li><i class="fas fa-envelope"></i> tumurochirs@berea.edu</li>
+						<li><i class="fas fa-phone"></i> +01 859-979-5120</li>
+						<li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/sugarragchaa-tumur-ochir-98b2882b6/">LinkedIn</a></li>
+						<li><i class="fab fa-github"></i> <a href="https://github.com/Sugargod1">My GitHub</a></li>
+						<li>&copy; Sugar. Tried Hard.</li>
+					</ul>
+				</div>
+			</div>
+			
+		</footer>
+		
+
+
+
+
+	<script src="{% static 'javascript/javascript.js' %}"></script>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
