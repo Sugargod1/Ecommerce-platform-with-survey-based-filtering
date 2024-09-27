@@ -9,6 +9,6 @@ My first Web Ecommerce project by using **HTML**, **CSS**, **JS**, **Django**, a
 - Products are visually appealing.
 - I organized my files as a developer, and while it's not perfect, it's good for the level of a freshman student.
 
-## Disadvantages:
+## Limitations:
 - Doesn't have an official routing system.
 - Incomplete authentication system (Only admin can add products).
