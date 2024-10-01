@@ -12,7 +12,7 @@ This is my first eCommerce web project developed using HTML, CSS, JavaScript, Dj
 
 ## Limitations:
 - Doesn't have an official routing system.
-- Incomplete authentication system (Only admin can add products).
+- No authentication system (Only admin can add products). Nobody could add products.
 
 
 ## Based on each survey response you get different results.
