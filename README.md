@@ -1,6 +1,7 @@
-# Laptop Ecommerce Platform
+# My First eCommerce Web Project
 
-My first Web Ecommerce project by using **HTML**, **CSS**, **JS**, **Django**, and **SQLite**. It was a very introductory project to gain hands-on experience I have finished this project while I was freshman.
+## Overview
+This is my first eCommerce web project developed using HTML, CSS, JavaScript, Django, and SQLite. The project served as an introductory experience to gain hands-on skills in web development.
 
 ## Advantages:
 - There are dynamic HTML pages for dynamically displaying laptops.
