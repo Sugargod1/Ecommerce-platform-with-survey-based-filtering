@@ -11,7 +11,7 @@ This is my first eCommerce web project developed using HTML, CSS, JavaScript, Dj
 - I organized my files as a developer, and while it's not perfect, it's good for the level of a freshman student.
 
 ## Limitations:
-- No buffer when wshowing products.
+- No buffer when showing products.
 - No authentication system (Only admin can add products). Nobody could add products.
 
 
