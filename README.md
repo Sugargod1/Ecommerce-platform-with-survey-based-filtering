@@ -8,7 +8,7 @@ This is my first eCommerce web project developed using HTML, CSS, JavaScript, Dj
 - Effectively stores products in the database.
 - Survey-based filtering for products.
 - Products are visually appealing.
-- I organized my files as a developer, and while it's not perfect, it's good for the level of a freshman student.
+- I organized my files as a developer, and while it's not perfect.
 
 ## Limitations:
 - No buffer when showing products.
